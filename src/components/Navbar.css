@@ -1,0 +1,38 @@
+.navbar{
+  color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1); 
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-links li a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+.navbar.light {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar.dark {
+  background: rgba(18, 18, 18, 0.85);
+  color: #eee;
+}
+.navbar .dark .nav-links li button{
+  background: rgba(18, 18, 18, 0.85);
+}
+.navbar .light .nav-links li button .mode{
+  background:rgba(255, 255, 255, 0.8);
+}
