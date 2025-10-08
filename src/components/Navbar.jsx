@@ -1,6 +1,6 @@
 import React ,{useState} from "react";
 import ReactDOM from "react-dom";
-import "./Navbar.css";
+import "/src/styles/Navbar.css";
 
 function Navbar(){
 
