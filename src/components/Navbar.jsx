@@ -8,9 +8,8 @@ function Navbar({darkMode,setDarkMode,setCurrentPage}){
         <ul className="nav-links">
             <li><a onClick={()=>setCurrentPage("home")} href="#home">Home</a></li>
             <li><a onClick={()=>setCurrentPage("about")} href="#about">About</a></li>
-            <li><a href="#initiatives">Initiatives</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onClick={()=>setCurrentPage("initiatives")} href="#initiatives">Initiatives</a></li>
+            <li><a  onClick={()=>setCurrentPage("contact")} href="#contact">Contact</a></li>
             <li><button className="mode" onClick={()=>{setDarkMode(!darkMode)}}>{darkMode ? "🌙" : "☀️"}</button></li>
         </ul>
     </nav>);

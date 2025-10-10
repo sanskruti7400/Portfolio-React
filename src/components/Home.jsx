@@ -6,9 +6,9 @@ function Home({darkMode}){
         <div className="home-text">
             <h2 id="name">Hi, I'm <br></br><b>Sanskruti Kadam</b></h2>
             <p id="desc"> <b>Full Stack Devloper</b> </p>
-            <button className="seeProjectButton">See Projects</button>
+            <button onClick={()=>{window.open("/src/images/Sanskruti_Kadam_Resume.pdf","blank")} } className="seeProjectButton">See Resume</button>
         </div>
-        <img src="/src/images/profileHome.jpg"></img>
+        <img src="/src/images/SanskrutiProfile.jpeg"></img>
     </div>);
 }
 

@@ -4,10 +4,10 @@ body{
 }
 .about{
     padding-top: 70px;
-    height: 700px;
+    height: 900px;
 }
 .about h2{
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -24,6 +24,31 @@ body{
 .about .tech-Skills h3{
     padding-bottom: 6px;
 }
+.about .education{
+    line-height: 3rem;
+    color: white;
+    padding : 20px 110px 0 90px;
+    line-height: 2rem;
+}
+.about .education h2{
+    padding-bottom: 6px;
+}
+.education td{
+    border: 1px solid black;
+    text-align: left;
+}
+.education th{
+    border: 1px solid black;
+    text-align: left;
+}
+.about.dark .education td,th{
+    border: 1px solid white;
+}
+.education table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
 .about.light{
     background:white;
     color: black;
@@ -31,3 +56,10 @@ body{
 .about.light .tech-Skills{
     color: black;
 }
+.about.light .education{
+    color: black;
+}
+.about.dark .education th,td{
+    border: 1px solid white;
+}
+

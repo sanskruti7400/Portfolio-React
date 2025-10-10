@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.initiatives{
+    padding-top: 70px;
+    height: 700px;
+}
+.initiatives h2{
+    margin-top: 60px;
+    padding-bottom: 10px;
+    color: #a9bcd0;
+    display: flex;
+    justify-content: center;
+}
+.initiatives div{
+    padding: 20px 0 0 50px;
+    line-height: 1.8rem;
+}
+.initiatives.light{
+    background-color: white;
+}
+.initiatives.light p{
+    color: black;
+}
