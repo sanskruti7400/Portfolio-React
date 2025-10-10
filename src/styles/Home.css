@@ -1,12 +1,47 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 100%;
 }
 .home-container{
     width: 100vw;
     left: 0;
     margin-top: 70px;  
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+.home-container .home-text #name{
+    margin-top: 100px;
+    font-size: xx-large;
+}
+.home-container #desc{
+    gap: 12px;
+    color: #58a4b0;
+    font-size: larger;
+    font-weight: 300;
+}
+.home-container .home-text .seeProjectButton{
+    margin-top: 35px;
+}
+img{
+    margin-top: 100px;
     height: 500px;
-    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.home-container.dark{
+    background: rgba(18, 18, 18, 0.85);
+    color: white;
+}
+.home-container.light{
+    background:white;
+    color: black;
+}
+body.dark .home-container div .seeProjectButton{
+    background-color: rgb(248, 246, 243);
+    color: black;
+}
+body.light .home-container div .seeProjectButton{
+    background-color: rgb(80, 80, 80);
+    color: black;
 }

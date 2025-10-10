@@ -1,5 +1,4 @@
 .navbar{
-  color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,17 +18,32 @@
 }
 .nav-links li a{
     text-decoration: none;
-    color: aliceblue;
 }
-.nav-links li a:hover{
+body.dark .navbar h2{
+  color: white;
+}
+body.light .navbar h2{
+  color: black;
+}
+body.dark .nav-links li a{
+  color:white;
+}
+body.light .nav-links li a{
+  color:black;
+}
+body.dark .nav-links li a:hover{
     text-decoration: underline;
-    color: blueviolet;
+    color: rgb(197, 234, 86);
 }
-.navbar.light {
-  background: rgba(255, 255, 255, 0.8);
+body.light .nav-links li a:hover{
+    text-decoration: underline;
+    color:brown;
+}
+body.light .navbar{
+  background:white;
 }
 
-.navbar.dark {
+body.dark .navbar{
   background: rgba(18, 18, 18, 0.85);
   color: #eee;
 }

@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 10px;
+}
+.about{
+    padding-top: 70px;
+    height: 700px;
+}
+.about h2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.about p{
+    color: #a9bcd0;
+    padding : 20px 90px 10px 90px;
+    line-height: 1.8rem;
+}
+.about .tech-Skills{
+    color: white;
+    padding : 20px 0 0 90px;
+    line-height: 2rem;
+}
+.about .tech-Skills h3{
+    padding-bottom: 6px;
+}
+.about.light{
+    background:white;
+    color: black;
+}
+.about.light .tech-Skills{
+    color: black;
+}
