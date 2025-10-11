@@ -1,25 +1,92 @@
-body{
-    margin: 0;
-    padding: 0;
+.initiatives {
+  padding: 60px 20px;
+  min-height: 100vh;
+  text-align: center;
+  transition: background-color 0.4s, color 0.4s;
 }
-.initiatives{
-    padding-top: 70px;
-    height: 700px;
+.initiatives h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
-.initiatives h2{
-    margin-top: 60px;
-    padding-bottom: 10px;
-    color: #a9bcd0;
-    display: flex;
-    justify-content: center;
+.initiatives.light {
+  background-color: #f8f9fa;   
+  color: #222;                 
 }
-.initiatives div{
-    padding: 20px 0 0 50px;
-    line-height: 1.8rem;
+
+.initiatives.light h2 {
+  color: #007bff;              
 }
-.initiatives.light{
-    background-color: white;
+
+.initiatives.light .project-box {
+  background-color: white;     
+  color: #222;                 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-.initiatives.light p{
-    color: black;
+.project-box h3{
+    color: #007bff;
+}
+.initiatives.dark {
+  background-color: #0d1117;   
+  color: #eaeaea;              
+}
+
+.initiatives.dark h2 {
+  color: #00bcd4;           
+}
+
+.initiatives.dark .project-box {
+  background-color: #1c1f26;  
+  color: #eaeaea;             
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  padding: 0 30px;
+}
+
+.project-box {
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.project-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.project-box .tech {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.project-box ul {
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.project-box li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-box {
+    max-width: 90%;
+  }
 }

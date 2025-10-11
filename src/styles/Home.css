@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 10px;
+    padding: 0;
     width: 100%;
 }
 .home-container{
@@ -10,6 +10,7 @@ body{
     height: 700px;
     display: flex;
     justify-content: space-around;
+    /* background-image:url("/src/images/1ddd59fb-5d33-482f-bfcd-6fb1ee97bab1.jpg"); */
 }
 .home-container .home-text #name{
     margin-top: 100px;
@@ -30,11 +31,11 @@ img{
     border-radius: 50%;
 }
 .home-container.dark{
-    background: rgba(18, 18, 18, 0.85);
+    /* background: rgba(18, 18, 18, 0.85); */
     color: white;
 }
 .home-container.light{
-    background:white;
+    /* background:white; */
     color: black;
 }
 body.dark .home-container div .seeProjectButton{

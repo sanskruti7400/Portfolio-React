@@ -1,14 +1,17 @@
 import React, {useState,useEffect} from "react";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from "react-icons/fa";
+import { SiMysql, SiPostgresql, SiExpress } from "react-icons/si";
 import ReactDOM from "react-dom";
 import "/src/styles/About.css";
 
 function About({darkMode}){
     return(<div id="about" className={`about ${darkMode ? "dark" : "light"}`}>
         <div><h2>About Myself</h2>
-        <p> Hi, I’m <b>Sanskruti Kadam,</b><br></br> a passionate <b>Full Stack Developer</b> with a love for creating dynamic and user-friendly web applications. I’m a Computer Science student who enjoys solving complex problems and turning ideas into functional, interactive software. 
-        I specialize in both frontend and backend development, and I love exploring new technologies like AI/ML, React.js, Node.js, and database management. My goal is to build projects that combine creativity, design, and logic to provide real-world solutions.
-        When I’m not coding, I enjoy learning about emerging technologies, contributing to open-source projects, and improving my problem-solving skills through algorithm challenges.
-        </p></div>
+        <p>
+          Hi, I’m <b>Sanskruti Kadam</b>, a passionate <b>Full Stack Developer</b>.
+          I love building interactive web applications using React.js, Node.js, and SQL. 
+          I enjoy solving problems, learning new technologies, and creating projects that make a real impact.
+        </p>
         <section>
                 <div className="tech-Skills">
                     <h3>Technical Skills</h3>
@@ -19,40 +22,18 @@ function About({darkMode}){
                         <li>Other: Problem Solving, Data Structures & Algorithms</li>
                     </ul>
                 </div>
-                <div className="education">
-                    <h3>Education</h3>
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Degree</th>
-                            <th>Institution</th>
-                            <th>Year</th>
-                            <th>Percentage/CGPA</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Bachelor of technology in Computer Science*</td>
-                            <td>DKTE's Textile & Engineering Institute , Ichalkaranji</td>
-                            <td>2023 - 2027</td>
-                            <td>8.3</td>
-                        </tr>
-                        <tr>
-                            <td>HSC (PCM)</td>
-                            <td>Patangrao Kadam Mahavidyalaya , Sangliwadi</td>
-                            <td>2021 - 2023</td>
-                            <td>78.50%(CET-96.20percentile)</td>
-                        </tr>
-                        <tr>
-                            <td>SSC</td>
-                            <td>Jijamata Vidyalaya ,Walwa</td>
-                            <td>2020 - 2021</td>
-                            <td>95.20%</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-        </section>
+        </section></div>
+        <div className="tech-icons">
+          <FaHtml5 color="#E34F26" />
+          <FaCss3Alt color="#1572B6" />
+          <FaJs color="#F7DF1E" />
+          <FaReact color="#61DAFB" />
+          <FaNodeJs color="#339933" />
+          <SiExpress color="#000000" />
+          <SiMysql color="#4479A1" />
+          <SiPostgresql color="#336791" />
+          <FaGitAlt color="#F05032" />
+        </div>
     </div>);
 }
 

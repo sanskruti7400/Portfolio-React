@@ -1,28 +1,60 @@
-import React ,{useState,useEffect} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import "/src/styles/Initiatives.css";
 
-function Initiatives({darkMode}){
-    return(<div id="initiatives" className={`initiatives ${darkMode ? "dark" : "light"}`}>
-       <div> <h2>Projects</h2>
-       <p> <b>🔹 College Club Organization Website </b>(Node.js, Express.js, EJS, SQL)<br></br>
-        - Implemented event registration, member profiles, volunteer sign-up, and certificate generation.<br></br>
-        - Responsible for full-stack development, database design, and authentication setup.<br></br>
-        </p> <br></br>
-        <p><b>🔹 Personal Portfolio Website</b> (React.js, JavaScript, CSS)<br></br>
-       - Designed a responsive UI showcasing projects, resume download, and contact form.<br></br>
-        - Deployed successfully on Netlify.
-        </p><br></br>
-        <p><b>🔹 School Management System</b> (Node.js, Express.js)<br></br>
-        - Developed backend APIs with WebSocket integration for real-time private & group chats.<br></br>
-        - Implemented secure authentication and messaging features.<br></br>
-        </p></div>
-        <div><h2>Technical Lead: CodeChef Club</h2>
-        <p>
-           <br></br>  ➤ Led a team of 4 members for developing coding challenges and club projects.<br></br>
-            ➤ Guided juniors in problem-solving, coding best practices, and project implementation.
-        </p></div>
-    </div>);
+function Initiatives({ darkMode }) {
+  const projects = [
+    {
+      title: "College Club Organization Website",
+      tech: "Node.js, Express.js, EJS, SQL",
+      desc: [
+        "Implemented event registration, member profiles, volunteer sign-up, and certificate generation.",
+        "Handled full-stack development, database design, and authentication setup.",
+      ],
+    },
+    {
+      title: "Personal Portfolio Website",
+      tech: "React.js, JavaScript, CSS",
+      desc: [
+        "Designed a responsive UI showcasing projects, resume download, and contact form.",
+        "Deployed successfully on Netlify.",
+      ],
+    },
+    {
+      title: "School Management System",
+      tech: "Node.js, Express.js",
+      desc: [
+        "Developed backend APIs with WebSocket integration for real-time private & group chats.",
+        "Implemented secure authentication and messaging features.",
+      ],
+    },
+    {
+      title: "Technical Lead – CodeChef Club",
+      tech: "Leadership & Mentorship",
+      desc: [
+        "Led a team of 4 members developing coding challenges and club projects.",
+        "Guided juniors in problem-solving, coding best practices, and project implementation.",
+      ],
+    },
+  ];
+
+  return (
+    <div id="initiatives" className={`initiatives ${darkMode ? "dark" : "light"}`}>
+      <h2>Projects & Initiatives</h2>
+      <section className="project-container">
+        {projects.map((p, index) => (
+          <div key={index} className="project-box">
+            <h3>{p.title}</h3>
+            <p className="tech">{p.tech}</p>
+            <ul>
+              {p.desc.map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 }
 
 export default Initiatives;
