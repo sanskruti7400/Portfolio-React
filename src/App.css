@@ -62,7 +62,7 @@ body.light .navbar{
 }
 
 body.dark .navbar{
-  background: #201020;
+  background: #100810;
   color: #eee;
 }
 
@@ -98,7 +98,7 @@ body.dark .navbar{
     width: 150px;
 }
 .home-container.dark{
-    background: #201020;
+    background: #100810;
     color: white;
 }
 .home-container.light{
@@ -154,7 +154,7 @@ body.light .home-container div .seeProjectButton:hover{
     color: white;
 }
 .initiatives.dark {
-  background-color: #201020;   
+  background-color: #100810;   
   color: #eaeaea;              
 }
 
@@ -281,7 +281,7 @@ body.light .home-container div .seeProjectButton:hover{
   box-shadow: 0 5px 15px rgb(230, 223, 207);
 }
 .about.dark{
-    background: #201020;
+    background: #100810;
     color:#a9bcd0;
 }
 .about.dark .tech-Skills{
@@ -368,7 +368,7 @@ body.light .home-container div .seeProjectButton:hover{
   box-shadow: 0 6px 18px rgba(218, 159, 218, 0.4);
 }
 .contact.dark {
-  background-color: #201020;
+  background-color: #100810;
   color: #f5f5f5;
 }
 
