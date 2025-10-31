@@ -487,3 +487,40 @@ body.light .home-container div .seeProjectButton:hover{
     font-size: 1.5rem;
   }
 }
+
+/* ✅ Prevent any horizontal scroll or extra white space */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Make all sections fit inside viewport */
+section, div {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ✅ Optional safety for images and videos */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ Fix specific paddings that may still push width */
+.home-text {
+  padding-left: 100px;
+  padding-right: 30px;
+}
+
+@media (max-width: 1024px) {
+  .home-text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .initiatives, .about, .contact {
+    padding: 60px 30px;
+  }
+}
