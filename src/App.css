@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden; /* ✅ Prevents horizontal scrolling */
 }
 #portfolio #navbar .navbar{
   display: flex;
@@ -60,12 +61,10 @@ body.light .nav-links li a:hover{
 body.light .navbar{
   background:#F3E5F5;
 }
-
 body.dark .navbar{
   background: #100810;
   color: #eee;
 }
-
 
 
 /*Home*/
@@ -75,11 +74,12 @@ body.dark .navbar{
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  overflow-x: hidden; /* ✅ Extra safety */
 }
 .home-text{
   flex: 1;
   padding-right: 30px;
-  padding-left: 250px;
+  padding-left: 100px; /* ✅ Reduced from 250px to avoid overflow */
 }
 .home-container .home-text #name{
     padding-top: 50px;
@@ -124,11 +124,9 @@ body.light .home-container div .seeProjectButton:hover{
 }
 
 
-
 /*Initiatives*/
 .initiatives {
-  /* padding: 60px 20px; */
-  padding:10px 150px 0px 150px;
+  padding: 10px 100px 0px 100px; /* ✅ Reduced from 150px */
   transition: background-color 0.4s, color 0.4s;
 }
 .initiatives h2 {
@@ -139,12 +137,10 @@ body.light .home-container div .seeProjectButton:hover{
   background-color: #F3E5F5;   
   color: #222;                 
 }
-
 .initiatives.light h2 {
   color: #dda3dd;         
   text-decoration: underline;     
 }
-
 .initiatives.light .project-box {
   background-color: #c3a9c3;     
   color: white;                 
@@ -157,12 +153,10 @@ body.light .home-container div .seeProjectButton:hover{
   background-color: #100810;   
   color: #eaeaea;              
 }
-
 .initiatives.dark h2 {
   color: #b33f62;     
   text-decoration: underline;       
 }
-
 .initiatives.dark .project-box {
   background-color: #5f395f;  
   color: #eaeaea;             
@@ -175,7 +169,6 @@ body.light .home-container div .seeProjectButton:hover{
   justify-items: center;
   padding: 0 30px;
 }
-
 .project-box {
   padding: 25px;
   border-radius: 16px;
@@ -184,27 +177,22 @@ body.light .home-container div .seeProjectButton:hover{
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-box:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
-
 .project-box h3 {
   font-size: 1.25rem;
   margin-bottom: 8px;
 }
-
 .project-box .tech {
   font-style: italic;
   margin-bottom: 10px;
 }
-
 .project-box ul {
   padding-left: 18px;
   list-style-type: disc;
 }
-
 .project-box li {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -212,22 +200,19 @@ body.light .home-container div .seeProjectButton:hover{
 }
 
 
-
-
 /*about*/
 #portfolio #About .about{
-    padding: 150px;
+    padding: 100px; /* ✅ Reduced from 150px */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 .about h2{
     margin-top: 100px;
     font-size: 2rem;
-    /* display: flex;
-    justify-content: center; */
     color:#dda3dd;
     text-decoration: underline; 
 }
@@ -289,12 +274,9 @@ body.light .home-container div .seeProjectButton:hover{
 }
 
 
-
-
-
 /*contact*/
 .contact {
-  padding: 100px 150px 150px 150px;
+  padding: 100px 100px 150px 100px; /* ✅ Reduced from 150px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,26 +321,21 @@ body.light .home-container div .seeProjectButton:hover{
   background-color: #f3e5f5;
   color: #222;
 }
-
 .contact.light h2 {
   color: #b854b8;
 }
-
 .contact.light .linkedIn {
   background-color: #0077b5;
   color: #fff;
 }
-
 .contact.light .email {
   background-color: #d44638;
   color: #fff;
 }
-
 .contact.light .whatsapp {
   background-color: #25d366;
   color: #fff;
 }
-
 .contact.light .github {
   background-color: #333;
   color: #fff;
@@ -371,26 +348,21 @@ body.light .home-container div .seeProjectButton:hover{
   background-color: #100810;
   color: #f5f5f5;
 }
-
 .contact.dark h2 {
   color: #b33f62;
 }
-
 .contact.dark .linkedIn {
   background-color: #0a66c2;
   color: #fff;
 }
-
 .contact.dark .email {
   background-color: #ff5f40;
   color: #fff;
 }
-
 .contact.dark .whatsapp {
   background-color: #1ebd60;
   color: #fff;
 }
-
 .contact.dark .github {
   background-color: #444;
   color: #fff;
@@ -404,23 +376,19 @@ body.light .home-container div .seeProjectButton:hover{
 /*responsive*/
 @media (max-width:1024px) {
   /*Navbar*/
-
   #portfolio #navbar .navbar{
     flex-direction:column;
     height: auto;
     padding:10px;
   }
   #portfolio #navbar .navbar .nav-links{
-    /* flex-direction: column; */
     gap: 1.5rem;
     align-items: center;
     padding: 10px 0;
   }
-
   #portfolio #navbar .navbar .nav-links li button{
     width: 100px;
   }
-
 
   /*Home*/
    #portfolio #Home .home-container {
@@ -429,7 +397,7 @@ body.light .home-container div .seeProjectButton:hover{
     text-align: center;
   }
   .home-text {
-    padding: 0;
+    padding: 0 30px;
   }
   .home-container .home-text #name {
     font-size: 1.8rem;
@@ -440,7 +408,7 @@ body.light .home-container div .seeProjectButton:hover{
 
   /* Initiatives Section */
   .initiatives {
-    padding: 60px 40px;
+    padding: 60px 30px;
   }
   .project-container {
     grid-template-columns: 1fr;
@@ -450,7 +418,7 @@ body.light .home-container div .seeProjectButton:hover{
   /* About Section */
   #portfolio #About .about {
     flex-direction: column;
-    padding: 80px 40px;
+    padding: 80px 30px;
     align-items: center;
   }
   .about img {
